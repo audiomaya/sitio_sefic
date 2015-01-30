@@ -1,3 +1,5 @@
-(function() {
-	console.log('hola mundo');
-})();
+'use strict';
+
+function () ({
+	console.log('hola mundo')
+});
