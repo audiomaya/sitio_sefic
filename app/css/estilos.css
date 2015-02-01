@@ -1,8 +1,11 @@
 body {
   background: #278ec3;
+  background-image: url("../img/bgPatas.png");
   color: #000;
   text-align: center;
+  text-shadow: 1px 1px 0px #969696;
   font-size: 16px;
+  font-family: 'Dosis', sans-serif;
   margin-top: 0;
   padding: 0;
 }
@@ -12,6 +15,11 @@ button {
   font-size: 1em;
   margin: 0.5em;
   padding: 0.5em;
+}
+footer {
+  background: #fff;
+  color: #f50065;
+  text-align: left;
 }
 h1 {
   color: #f1d200;
@@ -25,17 +33,43 @@ h2 {
 h3 {
   font-size: 2em;
 }
+#bgGuardia {
+  background: #ff7101;
+  border-radius: 1em 1em 0 0;
+  margin: 0 1em 1em 1em;
+}
 #contAzul {
   background: #278ec3;
   border-radius: 0.5em;
   margin: 5px;
 }
+#contAlimento {
+  background: #175fa0;
+  border-radius: 0 0 1em;
+  margin: 0 auto;
+  padding: 5px 2px 5px 2px;
+  width: 95%;
+}
+#contAlimento p {
+  font-size: 2em;
+  color: #fff;
+}
+#contAlimento h4 {
+  font-size: 2.5em;
+  color: #ff7101;
+}
+#contNiveles {
+  background: #c1dcf0;
+  border-radius: 1em;
+  padding: 1em;
+}
 #contHead {
   background-image: url("../img/imgPrincipal.jpg");
-  bacground-repeat: no-repeat;
+  bacground-repeat: no-repeat no-repeat;
   background-size: 100%;
   box-shadow: 7px 7px 5px 0 rbga(50, 50, 50, 0.45);
   margin-bottom: 30px;
+  padding: 70px 0 0 0;
   text-align: center;
   height: 440px;
 }
@@ -43,20 +77,64 @@ h3 {
   color: #f1d200;
 }
 #contHead h2 {
-  color: #278ec3;
+  color: #ff7101;
+}
+#contHead h3 {
+  color: #fff;
+}
+#guardia {
+  background-image: url("../img/bgCont.png");
+  background-color: #fff;
+}
+#guardia h2 {
+  color: #000;
 }
 #info {
   background: #175fa0;
   padding: 1em;
 }
 #info h3 {
-  color: #fff;
+  color: #278ec3;
   text-align: center;
 }
 #imgIzq {
   display: inline-block;
   vertical-align: top;
   width: 50%;
+}
+#menuNiv {
+  background: #abbcc8;
+  box-shadow: inset 5px 5px 5px 0px rgba(0,0,0,0.45);
+  border-radius: 0.5em;
+  margin: auto;
+  padding: 2.5em;
+  width: 80%;
+}
+#menuNiv ul {
+  list-style: none;
+  padding: 0;
+}
+#menuNiv ul li {
+  display: inline;
+  float: left;
+  margin-bottom: 20px;
+}
+#menuNiv ul li a {
+  color: #000;
+  font-size: 2em;
+  padding-bottom: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0;
+  text-decoration: none;
+}
+#menuNiv ul li a :hover {
+  background: #7da400;
+}
+#nivEnt {
+  background: #175fa0;
+  border-radius: 0.5em;
+  box-shadow: inset 10px 10px 5px 7px rgba(0,0,0,0.45);
 }
 #publi {
   background: #fff;
@@ -92,4 +170,48 @@ h3 {
   text-align: center;
   vertical-align: top;
   width: 45%;
+}
+.ribbon {
+  font-size: 2.5em !important;
+  position: relative;
+  background: #f50065;
+  box-shadow: 0px 5px 12px 0px rgba(50,50,50,0.75);
+  padding: 1em 2em;
+  margin: 0;
+}
+.ribbon :before,
+.ribbon :after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #986794;
+  z-index: -1;
+}
+.ribbon :before {
+  left: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+}
+.ribbon :after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+}
+.ribbon .ribbon-content:before,
+.ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #804f7c transparent transparent transparent;
+  bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
 }

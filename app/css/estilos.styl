@@ -1,15 +1,20 @@
 amarillo = #f1d200
 azulFuerte = #175fa0
 azul = #278ec3
+azulClaro = #c1dcf0
+gris = #abbcc8
 naranja = #ff7101
 rosa = #f50065
 verde = #7da400
 
 body
 	background azul
+	background-image url(../img/bgPatas.png)
 	color black
 	text-align center
+	text-shadow 1px 1px 0px (rgba(150,150,150,1))
 	font-size 16px
+	font-family 'Dosis', sans-serif
 	margin-top 0
 	padding 0
 button
@@ -18,7 +23,10 @@ button
 	font-size 1em
 	margin .5em
 	padding .5em
-	
+footer
+	background white
+	color rosa
+	text-align left
 h1
 	color amarillo
 	margin 0
@@ -28,16 +36,38 @@ h2
 	font-size 3.5em
 h3
 	font-size 2em
+#bgGuardia
+	background naranja
+	border-radius 1em 1em 0 0
+	margin 0 1em 1em 1em 
 #contAzul
 	background azul
 	border-radius .5em
 	margin 5px
+#contAlimento
+	background azulFuerte
+	border-radius 0 0 1em
+	margin 0 auto
+	padding 5px 2px 5px 2px 
+	width 95%
+	p 
+		font-size 2em
+		color white
+	h4
+		font-size 2.5em
+		color naranja
+	
+#contNiveles
+	background azulClaro
+	border-radius 1em
+	padding 1em
 #contHead
 	background-image url(../img/imgPrincipal.jpg)
-	bacground-repeat no-repeat
+	bacground-repeat no-repeat no-repeat
 	background-size 100%
 	box-shadow 7px 7px 5px 0 (rbga(50,50,50,0.45))
 	margin-bottom 30px
+	padding 70px 0 0 0
 	text-align center
 	height 440px
 	
@@ -46,19 +76,53 @@ h3
 		
 		
 	h2
-		color azul
-		
+		color naranja
+	h3
+		color white
+#guardia
+	background-image url(../img/bgCont.png)
+	background-color white
+	h2
+		color black	
 #info
 	background azulFuerte
 	padding 1em;
 	
 	h3
-		color white
+		color azul
 		text-align center
 #imgIzq
 	display inline-block
 	vertical-align top
 	width 50%
+#menuNiv
+	background gris
+	box-shadow inset 5px 5px 5px 0px (rgba(0,0,0,0.45))
+	border-radius .5em
+	margin auto
+	padding 2.5em
+	width 80%
+	ul 
+		list-style none
+		padding 0
+		li
+			display inline 
+			float left
+			margin-bottom 20px
+			a
+				color black
+				font-size 2em
+				padding-bottom 0
+				padding-left 20px
+				padding-right 20px
+				padding-top 0
+				text-decoration none
+				:hover
+					background verde
+#nivEnt
+	background azulFuerte
+	border-radius .5em
+	box-shadow inset 10px 10px 5px 7px (rgba(0,0,0,0.45))
 #publi
 	background white
 	border-radius 0 1em 0 1em
@@ -87,3 +151,39 @@ h3
 	text-align center
 	vertical-align top
 	width 45%
+.ribbon
+	font-size 2.5em !important
+	position relative
+	background rosa
+	box-shadow 0px 5px 12px 0px (rgba(50, 50, 50, 0.75))
+	padding 1em 2em
+	margin 0 
+	:before, :after
+		content ""
+		position absolute
+		display block
+		bottom -1em
+		border 1.5em solid #986794
+		z-index -1
+	:before
+		left -2em
+		border-left-width 1.5em
+		border-right-color transparent
+	:after
+		right -2em
+		border-left-width 1.5em
+		border-right-color transparent
+	.ribbon-content:before, .ribbon-content:after
+		content ""
+		position absolute
+		display block
+		border-style solid
+		border-color #804f7c transparent transparent transparent
+		bottom -1em
+	.ribbon-content:before
+		left 0
+		border-width 1em 0 0 1em
+	.ribbon-content:after
+		right 0
+		border-width 1em 1em 0 0 
+	

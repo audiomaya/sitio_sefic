@@ -29,6 +29,8 @@ gulp.task('jshint', function() {
 		.pipe(jshint.reporter('fail'));
 }); 
 
+
+
 //Preprocesa archivos de Stylus a CSS y recarga los cambios
 gulp.task('css', function() {
 	gulp.src('./app/css/estilos.styl')
@@ -43,11 +45,36 @@ gulp.task('html', function() {
 		.pipe(connect.reload());
 });
 
-//Vigila cambios que se produzcan en el código y lanza las tareas relacionadas
-gulp.task('watch', function() {
-	gulp.watch(['./app/**/*.html'], ['html']);
-	gulp.watch(['./app/css/**/*.styl'], ['css']);
-	gulp.watch(['./app/js/**/*.js','./Gulpfile.js'], ['jshint']);
+var inject = require('gulp-inject');
+var wiredep = require('wiredep').stream;
+
+//Busca en las carpetas de estilos yjavascript los archivos que hayamos creado
+//para inyectarlos en el index.html
+gulp.task('inject', function() {
+	var sources = gulp.src(['./app/js/**/*.js','./app/css/**/*.css']);
+	return gulp.src('index.html', {cwd: './app'})
+		.pipe(inject(sources, {
+			read: false,
+			ignorePath: '/app'
+		}))
+		.pipe(gulp.dest('./app'));
 });
 
-gulp.task('default', ['server', 'watch']);
+//Inyecta las librerias que instalemos vía Bower
+gulp.task('wiredep', function () {
+	gulp.src('./app/index.html')
+		.pipe(wiredep({
+			directory: './app/lib'
+		}))
+		.pipe(gulp.dest('./app'));
+});
+
+//Vigila cambios que se produzcan en el código y lanza las tareas relacionadas
+gulp.task('watch', function() {
+	gulp.watch(['./app/js/**/*.html'], ['html']);
+	gulp.watch(['./app/css/**/*.styl'], ['css', 'inject']);
+	gulp.watch(['./app/js/**/*.js','./Gulpfile.js'], ['jshint', 'inject']);
+	gulp.watch(['./bower.json'], ['wiredep']);
+});
+
+gulp.task('default', ['server', 'inject', 'wiredep', 'watch']);

@@ -2,11 +2,16 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="/css/estilos.css">
-	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
 	<title>Ejemplo</title>
+	<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+	<!-- bower:css -->
+	<!-- endbower -->
+	<!-- inject:css -->
+	<link rel="stylesheet" href="/css/estilos.css">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<!-- endinject -->
 </head>
-<body>
+<body ng-app="cefic">
 	<header id="contHead">
 		<nav>
 			<section id="izq">
@@ -16,13 +21,16 @@
 				
 			</section>
 		</nav>
+		<h2>Llegar a mi casa y ver la televisión con mis perros controlados.</h2>
+		<h3>No tienes precio...</h3>
 	</header>
 	<h1>INTEGRACIÓN</h1>
-		<h2>Familiar</h2>
+		<h2><font color="#ff7101">Familiar</font></h2>
 	<section id="principalSec">
 		<section id="info">
 			<h2>QUIENES <font color="#f1d200">SOMOS</font></h2>
 			<h3>empresa dedicada al <br>cuidado y bienestar de <br>los mejores amigos de nuestros clientes.</h3>
+			<button>Saber mas</button>
 		</section>
 		<div id="publi">
 			<div class="contIzq">
@@ -44,7 +52,74 @@
 			</div>
 			
 		</div>
-
+		<div id="nivEnt">
+			<div class="contIzq">
+				<h2>Niveles de <font color=" #f1d200">entrenamiento</font></h2>
+				<div id="contNiveles">
+					<div id="menuNiv">
+						<ul>
+							<li><a href="#">IF</a></li>
+							<li><a href="#">FA</a></li>
+							<li><a href="#">PF</a></li>
+							<li><a href="#">PE</a></li>
+							<li><a href="#">IC</a></li>
+						</ul>
+					</div>
+					<h3>Integración <font color="#7da400">Familiar</font></h3>
+					<h4>Modulo especialmente realizado para personas que necesitan se comporte bien dentro de casa y con los integrates de la familia.</h4>
+					<button>Saber mas</button>
+				</div>
+			</div>
+			<div class="contDere">
+				<h2>Tenemos <font color="#fid200">presencia</font></h2>
+				<img src="img/territorio.png"width="90%">
+			</div>
+		</div>
+		<section id="guardia">
+			<section id="imagen">
+				<img src="img/alto.png"width="40%">
+			</section>
+			<hgroup>
+				<h3>¿CANSADO DE LA INSEGURIDAD?</h3>
+				<h2>¡DEJA DE <font color="#7da400">PREOCUPARTE MAS!</font></h2>
+				<h3>Tenemos la solución a tu preocupación.</h3>
+				<h2>Tu perro puede ofrecerte <font color="#175fa0">cariño</font> y <font color="#175fa0">protección</font> sin poner en riesgo a tu <font color="#175fa0">familia</font>. No sacrificaras a tu <font color="#175fa0">mascota por un guardian</font>.</h2>
+			</hgroup>
+			<div id="bgGuardia">
+				<div class="contDere">
+					<img src="img/perroGuardian.png"width="100%">
+				</div>
+				<div class="contIzq">
+					<h2><font color="#f1d200">No podras creer</font> que tu perro se comporte <font color="#f1d200">mejor que antes...</font></h2>
+					<button>Saber como</button>
+				</div>
+			</div>
+		</section>
+		<h2 class="ribbon">
+			<strong class="ribbon-content">Sabemos lo importante que es tu perro para ti...</strong>
+		</h2>
+		<div id="contAlimento">
+			<h3>DEBIDO A ESO NOS HEMOS DADO A LA TAREA TRAERTE LO MEJOR EN ALIMENTOS PARA TU MEJOR AMIGO</h3>
+			<p>Contamos con la distribución de las mejores marcas en alimento para perro.</p>
+			<h4>Marcas:</h4>
+		</div>
 	</section>
+<footer>
+	<div class="contIzq">
+
+		<h3>Centro de Formación e Integración Canina</h3>
+		<p>Contacto: 55 2560/7813 -  55 3894/5188</p>
+		<p></p>
+
+	</div>
+	<div class="contDere">
+		<img src="img/logoCefic.png" width="30%">
+	</div>
+</footer>
+<!-- bower:js -->
+<!-- endbower -->
+<!-- inject:js -->
+<script src="/js/estilos.js"></script>
+<!-- endinject -->
 </body>
 </html>

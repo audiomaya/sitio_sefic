@@ -32,15 +32,15 @@
 16 silly addNameRange { name: 'gulp-inyect', range: '*', hasData: false }
 17 verbose request where is /gulp-inyect
 18 verbose request registry https://registry.npmjs.org/
-19 verbose request id e32ffb78455c0cba
+19 verbose request id 77b49d4eff4d25d9
 20 verbose url raw /gulp-inyect
 21 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-inyect' ]
 22 verbose url resolved https://registry.npmjs.org/gulp-inyect
 23 verbose request where is https://registry.npmjs.org/gulp-inyect
-24 info trying registry request attempt 1 at 17:51:46
+24 info trying registry request attempt 1 at 23:16:47
 25 http GET https://registry.npmjs.org/gulp-inyect
 26 http 404 https://registry.npmjs.org/gulp-inyect
-27 verbose headers { date: 'Wed, 28 Jan 2015 23:51:47 GMT',
+27 verbose headers { date: 'Sun, 01 Feb 2015 05:16:47 GMT',
 27 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
 27 verbose headers   'content-type': 'application/json',
 27 verbose headers   'cache-control': 'max-age=0',
@@ -48,14 +48,14 @@
 27 verbose headers   'accept-ranges': 'bytes',
 27 verbose headers   via: '1.1 varnish',
 27 verbose headers   age: '0',
-27 verbose headers   'x-served-by': 'cache-sjc3122-SJC',
+27 verbose headers   'x-served-by': 'cache-ord1734-ORD',
 27 verbose headers   'x-cache': 'MISS',
 27 verbose headers   'x-cache-hits': '0',
-27 verbose headers   'x-timer': 'S1422489107.399195,VS0,VE88',
+27 verbose headers   'x-timer': 'S1422767807.323637,VS0,VE67',
 27 verbose headers   'keep-alive': 'timeout=10, max=50',
 27 verbose headers   connection: 'Keep-Alive' }
 28 silly registry.get cb [ 404,
-28 silly registry.get   { date: 'Wed, 28 Jan 2015 23:51:47 GMT',
+28 silly registry.get   { date: 'Sun, 01 Feb 2015 05:16:47 GMT',
 28 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
 28 silly registry.get     'content-type': 'application/json',
 28 silly registry.get     'cache-control': 'max-age=0',
@@ -63,10 +63,10 @@
 28 silly registry.get     'accept-ranges': 'bytes',
 28 silly registry.get     via: '1.1 varnish',
 28 silly registry.get     age: '0',
-28 silly registry.get     'x-served-by': 'cache-sjc3122-SJC',
+28 silly registry.get     'x-served-by': 'cache-ord1734-ORD',
 28 silly registry.get     'x-cache': 'MISS',
 28 silly registry.get     'x-cache-hits': '0',
-28 silly registry.get     'x-timer': 'S1422489107.399195,VS0,VE88',
+28 silly registry.get     'x-timer': 'S1422767807.323637,VS0,VE67',
 28 silly registry.get     'keep-alive': 'timeout=10, max=50',
 28 silly registry.get     connection: 'Keep-Alive' } ]
 29 silly lockFile bc3eca24-gulp-inyect gulp-inyect@
